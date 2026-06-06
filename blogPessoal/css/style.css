@@ -1,0 +1,186 @@
+:root {
+    /* Base */
+    --bg-primary: #121317;
+    --bg-secondary: #1B1D23;
+    --bg-tertiary: #252831;
+
+    /* Texto */
+    --text-primary: #F3F4F6;
+    --text-secondary: #B5BAC4;
+    --text-muted: #8A909C;
+
+    /* Brand */
+    --accent-primary: #F97316;
+    --accent-secondary: #C84D3F;
+    --accent-soft: #9FDDE5;
+
+    /* Componentes */
+    --card-bg: #1B1D23;
+    --card-border: #343944;
+
+    --button-bg: #F97316;
+    --button-hover: #FF8B33;
+    --button-text: #FFFFFF;
+
+    --input-bg: #252831;
+    --input-border: #404655;
+
+    /* Estados */
+    --success: #4ADE80;
+    --warning: #F59E0B;
+    --danger: #EF4444;
+    --info: #9FDDE5;
+
+    /* Sombras */
+    --shadow-color: rgba(0, 0, 0, 0.45);
+}
+
+.lightTheme {
+    /* Base */
+    --bg-primary: #FFF8F2;
+    --bg-secondary: #FFF1E6;
+    --bg-tertiary: #FFE5D0;
+
+    /* Texto */
+    --text-primary: #2C2C30;
+    --text-secondary: #555A64;
+    --text-muted: #7A7F89;
+
+    /* Brand */
+    --accent-primary: #F97316;
+    --accent-secondary: #C84D3F;
+    --accent-soft: #7CCBD6;
+
+    /* Componentes */
+    --card-bg: #FFFFFF;
+    --card-border: #E7D8CB;
+
+    --button-bg: #F97316;
+    --button-hover: #E8640C;
+    --button-text: #FFFFFF;
+
+    --input-bg: #FFFFFF;
+    --input-border: #D6C8BC;
+
+    /* Estados */
+    --success: #16A34A;
+    --warning: #D97706;
+    --danger: #DC2626;
+    --info: #0891B2;
+
+    /* Sombras */
+    --shadow-color: rgba(0, 0, 0, 0.08);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    color: var(--text-primary);
+
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 100;
+    font-style: normal;
+
+    line-height: 2;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+
+    color: var(--text-primary);
+    background-color: var(--bg-primary);
+}
+
+aside {
+    display: inherit;
+    flex-direction: column;
+
+    position: sticky;
+    top: 0px;
+    left: 0px;
+
+    justify-content: center;
+
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+
+    width: 20%;
+    height: 100vh;
+
+    border-right: 2px solid var(--accent-primary);
+}
+
+#logo {
+    align-self: center;
+
+    width: 90%;
+    aspect-ratio: 1 / 1;
+
+    border: 2px solid var(--accent-primary);
+    background-color: var(--bg-tertiary);
+    border-radius: 50%;
+
+    margin-bottom: 5rem;
+}
+
+aside nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside nav * {
+    margin-bottom: 1rem;
+}
+
+a {
+    color: var(--text-secondary);
+}
+
+a:hover {
+    color: var(--text-muted);
+}
+
+.botoesPersonalizar{
+    align-self: center;
+    position: fixed;
+    bottom: 0px;
+    margin-bottom: 8px;
+}
+
+.botoesPersonalizar button {
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    background-color: var(--button-bg);
+    border: transparent;
+}
+
+.botoesPersonalizar button:hover {
+    background-color: var(--button-hover);
+}
+
+.botoesPersonalizar img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    display: block;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0rem 10rem 0rem 10rem;
+    text-align: center;
+}
