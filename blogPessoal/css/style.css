@@ -187,6 +187,7 @@ main {
     min-width: 0;
     align-items: center;
     text-align: center;
+    overflow-y: auto;
 }
 
 main > * {
@@ -292,6 +293,11 @@ li {
     justify-self: center;
 }
 
+#divTable {
+    flex-wrap: nowrap; /*N diminui elemento para funcionar a barra lateral*/
+    overflow-x: auto;
+}
+
 table {
     border: 1px solid var(--accent-primary);
     border-collapse: collapse;
@@ -334,6 +340,7 @@ button:hover {
 #mainContact {
     flex-direction: row;
     justify-content: space-around;
+
 }
 
 #mainContact > section {
@@ -354,10 +361,15 @@ button:hover {
     font-family: inherit;
     font-weight: inherit;
     font-style: inherit;
+    line-height: inherit;
+
+    box-sizing: border-box;
+    padding: 0.5rem;
 }
 
 #mainContact #formulario button{
-    width: 20%;
+    min-width: 20%;
+    width: fit-content;
     align-self: center;
     margin-bottom: 1rem;
 }
