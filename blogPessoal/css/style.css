@@ -84,7 +84,7 @@ html {
     font-weight: 100;
     font-style: normal;
 
-    line-height: 2;
+    line-height: 2rem;
 }
 
 body {
@@ -162,13 +162,6 @@ a:hover {
     width: 44px;
     height: 44px;
     padding: 0;
-    background-color: var(--button-bg);
-    border: transparent;
-    box-shadow: 0 8px 24px var(--shadow-color); /*Horizontal Vertical Desfoque*/
-}
-
-.botoesPersonalizar button:hover {
-    background-color: var(--button-hover);
 }
 
 .botoesPersonalizar img {
@@ -192,7 +185,7 @@ main {
 #ultimasPostagens {
     display: flex;
     flex-wrap: nowrap; /*N diminui elemento para funcionar a barra lateral*/
-    gap: 1rem;
+    gap: 2rem;
 
     overflow-x: auto; /*Barra de rolagem horizontal*/
     scroll-behavior: smooth;
@@ -201,7 +194,6 @@ main {
     padding: 1rem;
     flex-grow: 1;
 
-    /* justify-content: center; */
     align-items: center;
 }
 
@@ -270,6 +262,10 @@ summary {
     height: 25rem;
 }
 
+details {
+    margin-top: 1rem;
+}
+
 details p {
     text-align: justify;
 }
@@ -293,12 +289,27 @@ td {
     border: 1px solid var(--accent-primary);
 }
 
-#mainContact h1{
+h1{
     color: var(--accent-primary);
 }
 
-#informacoes h3{
+h2 {
     color: var(--accent-secondary);
+}
+
+h3{
+    color: var(--accent-secondary);
+}
+
+button {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: transparent;
+    box-shadow: 0 8px 24px var(--shadow-color); /*Horizontal Vertical Desfoque*/
+}
+
+button:hover {
+    background-color: var(--button-hover);
 }
 
 #informacoes span{
@@ -332,14 +343,9 @@ td {
 }
 
 #mainContact #formulario button{
-    background-color: var(--button-bg);
     width: 20%;
     align-self: center;
     margin-bottom: 1rem;
-}
-
-#mainContact #formulario button:hover{
-    background-color: var(--button-hover);
 }
 
 #mainContact #formulario textarea {
@@ -360,4 +366,25 @@ td {
     #mainContact > * {
         width: 100%;
     }
+}
+
+#receita mark {
+    background-color: var(--accent-primary);
+    color: var(--text-primary);
+}
+
+#receita q {
+    color: var(--text-secondary);
+}
+
+#receita cite {
+    color: var(--text-muted);
+}
+
+#receitas {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }

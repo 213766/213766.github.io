@@ -1,16 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html" class="">
 <head>
-    <title>Atividade Musse de Maracuja</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas</title>
+    
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <nav><a href="../receitas/receitas.html">Voltar</a></nav>
+    <aside>
+        <img id="logo" src="../../assets/logo.gif" alt="Melhor Pokémon de Todos:Volcarona">
+        <nav>
+            <a href="../receitas/receitas.html">Voltar</a>
+        </nav>
 
-    <main>
+        <section class="botoesPersonalizar">
+            <button type="button" onclick="DiminuirFonte()">
+                <img id="imgDiminuirFonte" alt="icone botao aumentar fonte">
+            </button>
+            <button type="button" onclick="ResetarFonte()">
+                <img id="imgResetarFonte" alt="icone botao resetar fonte">
+            </button>
+            <button type="button" onclick="AumentarFonte()">
+                <img id="imgAumentarFonte" alt="icone botao diminuir fonte">
+            </button>
+            <button type="button" onclick="TrocarTema()">
+                <img id="imgTheme" alt="icone botao troca tema">
+            </button>
+        </section>
+
+    </aside> 
+
+    <main id="receita">
         <h1>Musse de Maracujá</h1>
-        <i>WebLab - 2025/1</i><br><br>
-        Uma Sobremesa deliciosa e <mark>fácil</mark> de fazer.<br>
+        <i>WebLab - 2025/1</i>
+        <p>Uma Sobremesa deliciosa e <mark>fácil</mark> de fazer.</p>
         <h2>Ingredientes</h2>
         <ul>
             <li>1 lata de leite condensado</li>
@@ -20,14 +49,16 @@
         </ul>
         <h2>Modo de Preparo</h2>
         <ol>
-            <li>Em um liquidificador, bata o leite condensado, o creme de leite e o suco de maracujá até obter uma<br>
-            mistura homogênea.</li>
+            <li>Em um liquidificador, bata o leite condensado, o creme de leite e o suco de maracujá até obter uma mistura homogênea.</li>
             <li><em>Se esiver muito densa,</em> adicione mais água e bata por mais <b>aluns segundos.</b></li>
             <li>Despeje a musse em taças inividuais e leve a geladeira por cerca de 4 horas ou até que esteja firme.</li>
             <li>Sirva gelado e bom apetite!</li>
         </ol>
-        <q>Receita muito boa, eu recomendo.</q><br>
+        <q>Receita muito boa, eu recomendo.</q>
         <cite>- Prof. Pablo Leon Rodrigues</cite>
     </main>
+
+    <script src="../../js/Personalizar.js"></script>
+
 </body>
 </html>
