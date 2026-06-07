@@ -262,7 +262,7 @@ summary {
 #introducao img {
     align-self: center;
 
-    width: 25rem;
+    width: 90%;
     aspect-ratio: 1 / 1;
 
     border: 2px solid var(--accent-primary);
@@ -273,7 +273,7 @@ summary {
 } 
 
 #interesses img {
-    height: 25rem;
+    width: 75vw;
 }
 
 details {
