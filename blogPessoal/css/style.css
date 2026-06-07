@@ -262,6 +262,8 @@ summary {
     border: 2px solid var(--accent-primary);
     background-color: var(--bg-tertiary);
     border-radius: 50%;
+
+    margin-top: 2rem;
 } 
 
 #interesses img {
@@ -274,4 +276,15 @@ details p {
 
 details strong {
     color: var(--accent-secondary);
+}
+
+table {
+    border: 1px solid var(--accent-primary);
+    border-collapse: collapse;
+    background-color: var(--bg-secondary);
+}
+
+th,
+td {
+    border: 1px solid var(--accent-primary);
 }
