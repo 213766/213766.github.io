@@ -107,7 +107,8 @@ aside {
     top: 0px;
     left: 0px;
 
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
 
     background-color: var(--bg-secondary);
     color: var(--text-primary);
@@ -117,30 +118,26 @@ aside {
 
     border-right: 2px solid var(--accent-primary);
 
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto; /*Barra de rolagem vertical*/
 }
 
 aside #logo {
-    align-self: center;
-
     width: 90%;
     aspect-ratio: 1 / 1;
 
     border: 2px solid var(--accent-primary);
     background-color: var(--bg-tertiary);
     border-radius: 50%;
-
-    margin-bottom: 5rem;
 }
 
 aside nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-aside nav * {
-    margin-bottom: 1rem;
+    justify-content: space-around;
+    gap: 1rem;
+    margin: 2rem;
 }
 
 a {
@@ -152,19 +149,29 @@ a:hover {
 }
 
 .botoesPersonalizar{
-    align-self: center;
-    position: fixed;
-    bottom: 0px;
-    margin-bottom: 8px;
+    display: flex;
+    position: flex-end;
+    justify-content: space-around;
+    gap: 11px;
 }
 
 .botoesPersonalizar button {
     width: 44px;
     height: 44px;
-    padding: 0;
+    padding: 4.4px;
 }
 
-.botoesPersonalizar img {
+#bttAside {
+    width: 44px;
+    height: 44px;
+    padding: 4.4px;
+    position: absolute;
+    right: 4.4px;
+    top: 4.4px;
+    scale: 0;
+}
+
+button img {
     width: 100%;
     height: 100%;
 
@@ -179,7 +186,10 @@ main {
     min-width: 0;
     align-items: center;
     text-align: center;
-    margin: 0px 8rem 0px 8rem;
+}
+
+main > * {
+    max-width: 80%;
 }
 
 #ultimasPostagens {
@@ -190,7 +200,7 @@ main {
     overflow-x: auto; /*Barra de rolagem horizontal*/
     scroll-behavior: smooth;
 
-    width: 100%;
+    max-width: 100%;
     padding: 1rem;
     flex-grow: 1;
 
@@ -319,8 +329,9 @@ button:hover {
 
 #mainContact {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 10%;
+    margin: 0rem 5rem 0rem 5rem;
 }
 
 #mainContact > * {
@@ -358,16 +369,6 @@ button:hover {
     width: 100%;
 }
 
-@media (max-width: 1600px) {
-    #mainContact {
-        flex-direction: column;
-        gap: 0%;
-    }
-    #mainContact > * {
-        width: 100%;
-    }
-}
-
 #receita mark {
     background-color: var(--accent-primary);
     color: var(--text-primary);
@@ -387,4 +388,35 @@ button:hover {
     gap: 2rem;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+@media (max-width: 1600px) {
+    #mainContact {
+        flex-direction: column;
+        gap: 0%;
+    }
+
+    #mainContact > * {
+        width: 100%;
+    }
+
+    aside {
+        position: fixed;
+        top: 0;
+        width: 80vw;
+
+        transform: translateX(-100%);
+        transition: transform 0.5s;
+
+        z-index: 1;
+    }
+
+    .asideActive {
+        transform: translateX(0);
+        transition: transform 0.5s;
+    }
+
+    #bttAside {
+        scale: 1;
+    }
 }

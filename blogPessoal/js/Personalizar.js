@@ -41,6 +41,8 @@ function SetImgDarkTheme() {
     document.getElementById('imgResetarFonte').src = caminhoBase + 'assets/rotate_auto_44dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.svg';
     document.getElementById('imgAumentarFonte').src = caminhoBase + 'assets/text_increase_44dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.svg';
     document.getElementById('imgTheme').src = caminhoBase + 'assets/light_mode_44dp_E3E3E3_FILL0_wght400_GRAD0_opsz48.svg';
+    document.getElementById('imgBttAside').src = caminhoBase + 'assets/menu_44dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.svg';
+
 }
 
 function SetImgLightTheme() {
@@ -48,6 +50,7 @@ function SetImgLightTheme() {
     document.getElementById('imgResetarFonte').src = caminhoBase + 'assets/rotate_auto_44dp_000000_FILL0_wght400_GRAD0_opsz48.svg';
     document.getElementById('imgAumentarFonte').src = caminhoBase + 'assets/text_increase_44dp_000000_FILL0_wght400_GRAD0_opsz48.svg';
     document.getElementById('imgTheme').src = caminhoBase + 'assets/dark_mode_44dp_000000_FILL0_wght400_GRAD0_opsz48.svg';
+    document.getElementById('imgBttAside').src = caminhoBase + 'assets/menu_44dp_000000_FILL0_wght400_GRAD0_opsz48.svg';
 }
 
 function TrocarTema() {
