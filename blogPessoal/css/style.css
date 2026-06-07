@@ -165,10 +165,11 @@ a:hover {
     width: 44px;
     height: 44px;
     padding: 4.4px;
-    position: absolute;
+    position: fixed;
     right: 4.4px;
     top: 4.4px;
     scale: 0;
+    border-radius: 50%;
 }
 
 button img {
@@ -253,6 +254,9 @@ main > * {
 summary {
     font-size: 2rem;
     color: var(--accent-primary);
+    position: sticky;
+    top: 0;
+    background-color: var(--bg-primary);
 }
 
 #introducao img {
@@ -330,12 +334,11 @@ button:hover {
 #mainContact {
     flex-direction: row;
     justify-content: space-around;
-    gap: 10%;
-    margin: 0rem 5rem 0rem 5rem;
 }
 
-#mainContact > * {
+#mainContact > section {
     width: 50%;
+    margin: 5rem;
 }
 
 #mainContact #formulario form {
@@ -393,17 +396,20 @@ button:hover {
 @media (max-width: 1600px) {
     #mainContact {
         flex-direction: column;
-        gap: 0%;
+        width: 90%;
+        gap: 5%;
     }
 
-    #mainContact > * {
+    #mainContact > section {
         width: 100%;
+        margin: 0;
     }
 
     aside {
         position: fixed;
         top: 0;
         width: 80vw;
+        height: 100%;
 
         transform: translateX(-100%);
         transition: transform 0.5s;
