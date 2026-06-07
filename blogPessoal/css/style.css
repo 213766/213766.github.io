@@ -91,7 +91,7 @@ body {
     margin: 0;
     padding: 0;
 
-    width: 100%;
+    width: 100vw;
     min-height: 100vh;
 
     display: flex;
@@ -124,6 +124,7 @@ aside {
 
 aside #logo {
     width: 90%;
+    max-width: 50vw;
     aspect-ratio: 1 / 1;
 
     border: 2px solid var(--accent-primary);
@@ -137,7 +138,7 @@ aside nav {
     align-items: center;
     justify-content: space-around;
     gap: 1rem;
-    margin: 2rem;
+    margin: 15%;
 }
 
 a {
@@ -153,7 +154,7 @@ a:hover {
     position: flex-end;
     justify-content: space-around;
     gap: 11px;
-    margin-bottom: 11px;
+    margin-bottom: 10%;
 }
 
 .botoesPersonalizar button {
@@ -184,8 +185,8 @@ button img {
 main {
     display: flex;
     flex-direction: column;
-    flex: 1;
-    min-width: 0;
+    width: 100%;
+    height: 100%;
     align-items: center;
     text-align: center;
 }
@@ -274,7 +275,7 @@ summary {
 } 
 
 #interesses img {
-    width: 75vw;
+    max-width: 100%;
 }
 
 details {
@@ -340,12 +341,19 @@ button:hover {
 #mainContact {
     flex-direction: row;
     justify-content: space-around;
-
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    align-content: center;
+    gap: 10%;
 }
 
 #mainContact > section {
-    width: 50%;
-    margin: 5rem;
+    max-width: 40%;
+    align-self: center;
+    justify-self: center;
 }
 
 #mainContact #formulario form {
@@ -413,16 +421,16 @@ button:hover {
     }
 
     #mainContact > section {
-        width: 100%;
+        max-width: 90%;
+        width: 90vw;
         margin: 0;
     }
 
     aside {
         position: fixed;
         top: 0;
-        width: 80vw;
+        width: 80%;
         height: 100%;
-        min-width: 80%;
 
         transform: translateX(-100%);
         transition: transform 0.5s;
