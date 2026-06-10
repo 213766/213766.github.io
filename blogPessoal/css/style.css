@@ -307,7 +307,6 @@ li {
 #divTable {
     flex-wrap: nowrap; /*N diminui elemento para funcionar a barra lateral*/
     overflow-x: auto;
-    max-width: 80%;
 }
 
 table {
