@@ -268,6 +268,7 @@ summary {
     position: sticky;
     top: 0;
     background-color: var(--bg-primary);
+    line-height: rem;
 }
 
 #introducao img {
@@ -312,6 +313,7 @@ table {
     border: 1px solid var(--accent-primary);
     border-collapse: collapse;
     background-color: var(--bg-secondary);
+    max-width: 80%;
 }
 
 th,
