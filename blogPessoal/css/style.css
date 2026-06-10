@@ -307,13 +307,13 @@ li {
 #divTable {
     flex-wrap: nowrap; /*N diminui elemento para funcionar a barra lateral*/
     overflow-x: auto;
+    max-width: 80%;
 }
 
 table {
     border: 1px solid var(--accent-primary);
     border-collapse: collapse;
     background-color: var(--bg-secondary);
-    max-width: 80%;
 }
 
 th,
