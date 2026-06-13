@@ -406,6 +406,11 @@ button:hover {
     color: var(--text-muted);
 }
 
+#receita img {
+    width: 50rem;
+    max-width: 100%;
+}
+
 #receitas {
     display: flex;
     flex-direction: row;
