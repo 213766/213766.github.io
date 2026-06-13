@@ -1,4 +1,4 @@
-# 213766.github.io
+https://github.com/213766/213766.github.io
 
 Blog pessoas desenvolvido para a matéria de Desenvolvimento Web 2026/01
 
